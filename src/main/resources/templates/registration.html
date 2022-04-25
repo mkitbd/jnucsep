@@ -11,6 +11,7 @@
     height: 200px;
     background: #aaa;
   }
+
   </style>
 </head>
 <body>
@@ -19,7 +20,6 @@
     <h1>Jagannath University</h1>
     <p>Master's of Computer Science & Engineering (Professional)</p>
 </div>
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
         <ul class="navbar-nav">
@@ -36,25 +36,26 @@
     </div>
 </nav>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-sm-4">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-
-            <hr class="d-sm-none">
+<div class="container mt-3">
+    <h2>Registration form</h2>
+    <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
         </div>
-        <div class="col-sm-8">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2020</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="mb-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
         </div>
-    </div>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>
+
 <div class="mt-5 p-4 bg-dark text-white text-center">
     <p>©2022, Md. Mostafa Kamal, Jagannath University, Master's of CSE (Professional), Batch-11, Section-A, All Rights Reserved.</p>
 </div>

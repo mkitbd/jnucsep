@@ -17,7 +17,7 @@
 
 <div class="p-4 bg-primary text-white text-center">
     <h1>Jagannath University</h1>
-    <p></p>
+    <p>Master's of Computer Science & Engineering (Professional)</p>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -30,34 +30,85 @@
                 <a class="nav-link" href="about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Registration</a>
+                <a class="nav-link" href="registration">Registration</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-sm-4">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <!-- Carousel wrapper -->
+    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button
+                    type="button"
+                    data-mdb-target="#carouselBasicExample"
+                    data-mdb-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+            ></button>
+            <button
+                    type="button"
+                    data-mdb-target="#carouselBasicExample"
+                    data-mdb-slide-to="1"
+                    aria-label="Slide 2"
+            ></button>
+            <button
+                    type="button"
+                    data-mdb-target="#carouselBasicExample"
+                    data-mdb-slide-to="2"
+                    aria-label="Slide 3"
+            ></button>
+        </div>
 
-            <hr class="d-sm-none">
+        <!-- Inner -->
+        <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="Sunset Over the City"/>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100" alt="Canyon at Nigh"/>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-8">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2020</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+    <!-- Carousel wrapper -->
 </div>
 
 <div class="mt-5 p-4 bg-dark text-white text-center">
-    <p>©2022, Md. Mostafa Kamal, Jagannath University, CSE (Professional), Batch 11, Section A, All Rights Reserved.</p>
+    <p>©2022, Md. Mostafa Kamal, Jagannath University, Master's of CSE (Professional), Batch-11, Section-A, All Rights Reserved.</p>
 </div>
 
 </body>

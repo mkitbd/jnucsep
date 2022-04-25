@@ -15,4 +15,9 @@ public class WebController {
         return "about";
     }
 
+    @RequestMapping(value = "/registration")
+    public String registration() {
+        return "registration";
+    }
+
 }
