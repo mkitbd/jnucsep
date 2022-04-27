@@ -1,7 +1,9 @@
 package jnu.jnucsep.controller;
 
+import jnu.jnucsep.model.Student;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class WebController {
@@ -15,9 +17,11 @@ public class WebController {
         return "about";
     }
 
-    @RequestMapping(value = "/registration")
-    public String registration() {
-        return "registration";
+    @GetMapping("/Student")
+    public String showStudent (Model model){
+        Student student = new Student();
+        model.addAttribute("student",student);
+        return "student";
     }
 
 }
