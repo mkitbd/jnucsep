@@ -22,6 +22,11 @@ public class WebController {
         return "about";
     }
 
+    @RequestMapping(value = "/login")
+    public String login() {
+        return "login";
+    }
+
     @GetMapping("/Student")
     public String showStudent (Model model){
         Student student = new Student();
