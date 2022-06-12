@@ -21,14 +21,8 @@
 <div class="container mt-3">
     <h2>Registration form</h2>
 
-    <form action="#" th:action="@{/saveStudent}" th:object="${student}"
+    <form action="#" th:action="@{/saveUserRegistration}" th:object="${user_information}"
           method="POST">
-
-        <input type="text" th:field="*{firstName}"
-               placeholder="First Name" class="form-control mb-2 col-4">
-
-        <input type="text" th:field="*{lastName}"
-               placeholder="Last Name" class="form-control mb-4 col-4">
 
         <input type="text" th:field="*{email}"
                placeholder="email" class="form-control mb-4 col-4">
@@ -39,10 +33,6 @@
         <button type="submit" class="btn btn-success col-1">Save</button>
     </form>
 </div>
-<!---
-<div class="mt-5 p-4 bg-dark text-white text-center">
-    <p>©2022, Md. Mostafa Kamal, Jagannath University, Master's of CSE (Professional), Batch-11, Section-A, All Rights Reserved.</p>
-</div>--->
 </body>
 <div th:include="fragments/footer::footer"></div>
 </html>

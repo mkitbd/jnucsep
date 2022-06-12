@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
-xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <title>JNU-CSE(Professional)</title>
     <meta charset="utf-8">
@@ -14,10 +13,37 @@ xmlns:th="http://www.thymeleaf.org">
     background: #aaa;
   }
   </style>
-
 </head>
 <body>
-<div th:include="fragments/header::header"></div>
+
+<div class="p-4 bg-light text-white text-center">
+    <div class="row">
+        <div class="col-sm-2">
+            <img th:src="@{/img/jnu.jpg}" alt="">
+        </div>
+        <!-- <div class="col-sm-8"><h1>Jagannath University</h1>
+             <p>Master's of Computer Science & Engineering (Professional)</p>
+         </div>-->
+     </div>
+
+ </div>
+
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+     <div class="container-fluid">
+         <ul class="navbar-nav">
+             <li class="nav-item">
+                 <a class="nav-link active" href="index">Home</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="about">About</a>
+             </li>
+             <li class="nav-item">
+                 <a th:href="@{/Student}" class="nav-link">Registration</a>
+             </li>
+         </ul>
+     </div>
+ </nav>
+
  <div class="container mt-5">
      <!-- Carousel wrapper -->
     <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
@@ -89,6 +115,9 @@ xmlns:th="http://www.thymeleaf.org">
     <!-- Carousel wrapper -->
 </div>
 
+<div class="mt-5 p-4 bg-dark text-white text-center">
+    <p>©2022, Md. Mostafa Kamal, Jagannath University, Master's of CSE (Professional), Batch-11, Section-A, All Rights Reserved.</p>
+</div>
+
 </body>
-<div th:include="fragments/footer::footer"></div>
 </html>
