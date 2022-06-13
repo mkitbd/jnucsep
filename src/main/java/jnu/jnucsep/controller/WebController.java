@@ -1,5 +1,6 @@
 package jnu.jnucsep.controller;
 
+import jdk.nashorn.internal.runtime.ErrorManager;
 import jnu.jnucsep.model.Student;
 import jnu.jnucsep.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,16 +31,19 @@ public class WebController {
         Student student = new Student();
         model.addAttribute("student",student);
 
-        List<String> listBatch = Arrays.asList("10th", "11th", "12th");
+        List<String> listBatch = Arrays.asList(" ", "10th", "11th", "12th");
         model.addAttribute("listBatch", listBatch);
 
         return "student";
     }
 
     @PostMapping("/saveStudent")
-    public String saveStudent(@ModelAttribute("student") Student student){
+    public String saveStudent(@ModelAttribute("student") Student student) {
         studentService.saveStudent(student);
-        return "student";
+
+        System.out.println(student);
+
+            return "register_success";
     }
 
 }
