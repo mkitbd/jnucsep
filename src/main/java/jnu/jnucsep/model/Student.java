@@ -22,9 +22,22 @@ public class Student {
     @Column(name = "lastName")
     private String lastName;
 
+    @Column(name = "gender")
+    private String gender;
+
+    @Column(name = "department")
+    private String department;
+
+    @Column(name = "batch")
+    private String batch;
+
+    @Column(name = "roll")
+    private String roll;
+
     @Column(name = "email")
     private String email;
 
     @Column(name = "password")
     private String password;
+
 }

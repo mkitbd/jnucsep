@@ -7,6 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 @Controller
 public class WebController {
     @Autowired
@@ -26,6 +29,10 @@ public class WebController {
     public String showStudent (Model model){
         Student student = new Student();
         model.addAttribute("student",student);
+
+        List<String> listBatch = Arrays.asList("10th", "11th", "12th");
+        model.addAttribute("listBatch", listBatch);
+
         return "student";
     }
 
